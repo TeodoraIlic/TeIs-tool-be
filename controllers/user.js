@@ -26,8 +26,7 @@ exports.signInUser = (req, res, next) => {
         if(!user){
             return res.status(401).json({
                 message: "Auth failed!"
-            })
-           
+            }) 
         }
         fetchedUser = user;
         return bcrypt.compare(req.body.password, user.password);
@@ -53,5 +52,4 @@ exports.signInUser = (req, res, next) => {
         })
     }
     )
-
 }

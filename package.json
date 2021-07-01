@@ -2,7 +2,7 @@
   "name": "teis-tool-be",
   "version": "0.0.0",
   "scripts": {
-    "dev": "nodemon server.js"
+    "start": "ts-node-dev server.js"
   },
   "private": true,
   "dependencies": {
@@ -28,6 +28,7 @@
     "jasmine-spec-reporter": "~4.2.1",
     "protractor": "~5.4.3",
     "ts-node": "~8.3.0",
+    "ts-node-dev": "^1.1.7",
     "tslint": "~5.18.0",
     "typescript": "~3.7.5"
   }
